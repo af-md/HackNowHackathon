@@ -54,3 +54,27 @@ print("-----------------_END_------------------")
  # - Objectives
  # - Open ended goals 
 
+
+
+# INPUT
+
+# Chop sentences
+
+    # Does sentece contain verbs
+
+        # Remote assistance
+
+        # Physical assitance
+
+            # output = Remote classification % & Physical Classification %
+
+    # Does sentence contain nouns
+
+        # Address
+
+        # Name
+
+        # Phone
+
+            # Output = Extract Addr/Name/Phone
+    

@@ -48,10 +48,44 @@ function attemptPhoneNumber(sentence) {
     return chances;
 }
 
-function attemptName() {
+function findNouns(arrayOfTokens) {
+    const language = "EN"
+    const defaultCategory = 'N';
+    const defaultCategoryCapitalized = 'NNP';
+     
+    var lexicon = new natural.Lexicon(language, defaultCategory, defaultCategoryCapitalized);
+    var ruleSet = new natural.RuleSet('EN');
+    var tagger = new natural.BrillPOSTagger(lexicon, ruleSet);
+
+    console.log(tagger.tag(arrayOfTokens));
+}
+
+function attemptName(sentence) {
+    natural.PorterStemmer.attach();
+
+    let tokens = sentence.tokenizeAndStem();
+    let nameIndex = _.findIndex(tokens, (t) => {
+        return t == "name"
+    })
+
+    if (nameIndex >= 0) {
+        const possibleNames = _.slice(tokens, nameIndex + 1)
+        const maxDepthOfOptions = possibleNames.slice(0, 5)
+        
+        findNouns(maxDepthOfOptions);
+        
+    } else {
+        // Name doesn't exist - what other directives could we check for?
+
+    }
+    // santize tokens
+}
+
+function attemptAddress() {
 
 }
 
 _.forEach(sentences, (s) => {
-    console.log(attemptPhoneNumber(s));
+    //console.log(attemptPhoneNumber(s));
+    attemptName(s);
 });
