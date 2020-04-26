@@ -1,0 +1,215 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<section class="container-fluid row flex-grow p-4 bg-primary m-0" style="height: 200vh">
+    <div class="col-3 p-2">
+        <div class="border border-white rounded p-1 bg-white">
+            <div class="w-100"><h4 class="text-center">To Pick Up</h4></div>
+
+            <hr />
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Urgent Medication Required</h5></div>
+                <div>"I have ran out of my pills and I am feeling a little drowsy, could you collect my medication. I live in 34 Benson Ave in Manchester"</div>
+
+                <div>
+                    <span class="badge badge-danger">Urgent</span>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                    <span class="badge badge-info">Manchester</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Collect Prescription</h5></div>
+                <div>"Hello I nees some one to collect my prescription". "I live in Bolton"</div>
+
+                <div>
+                    <span class="badge badge-danger">Urgent</span>
+                    <span class="badge badge-primary">Physical Assistance</span>
+                    <span class="badge badge-info">Bolton</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Broken TV</h5></div>
+                <div>My television is broken, I don't have anyhting todo, can you sen someone to fix it, I live on 4 Salford Street</div>
+
+                <div>
+                    <span class="badge badge-warning">Semi - Urgent</span>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                    <span class="badge badge-info">Salford</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Require Friendly Conversation</h5></div>
+                <div>This task requires some urgency</div>
+
+                <div>
+                    <span class="badge badge-info">Blackburn</span>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Collection Required</h5></div>
+                <div>This task requires some urgency</div>
+
+                <div>
+                    <span class="badge badge-info">London</span>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                    <span class="badge badge-danger">Urgent</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="col-3 p-2">
+        <div class="border border-white rounded p-1 bg-white">
+            <div class="w-100"><h4 class="text-center">Requires More Info <br /> (Contact Customer)</h4></div>
+
+            <hr />
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Broken AC</h5></div>
+                <div>"It's too warm in my house, I think the AC is broken, can you send someone to fix it?"</div>
+                <div>
+                    <span class="badge badge-warning">Semi - Urgent</span>
+                    <span class="badge badge-primary">Physical Assistance</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Deliver Fruit</h5></div>
+                <div>"I have run out of fresh fruit, could somebody help me? My address is 45 Long Road."</div>
+                <div>
+                    <span class="badge badge-primary">Physical Assistance</span>
+                    <span class="badge badge-info">45 Long Road</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-3 p-2">
+        <div class="border border-white rounded p-1 bg-white">
+            <div class="w-100"><h4 class="text-center">In Progress</h4></div>
+
+            <hr />
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Delivery Required</h5></div>
+                <div>"My name is Karl Saggan.", "I would like to have a parcel delivered to 69 Block D Alto.", "Contact me on 0161 694 689."</div>
+                <div>
+                    <span class="badge badge-warning">Semi - Urgent</span>
+                    <span class="badge badge-primary">Physical Assistance</span>
+                    <span class="badge badge-info">Manchester</span>
+                    <span class="badge badge-info">0161 694 689</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3 p-2">
+        <div class="border border-white rounded p-1 bg-white">
+            <div class="w-100"><h4 class="text-center">Completed</h4></div>
+
+            <hr />
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Medication Delivery</h5></div>
+                <div>"I have ran out of my pills and I am feeling a little drowsy, could you collect my medication. I live in 34 Benson Ave in Manchester"</div>
+
+                <div>
+                    <span class="badge badge-danger">Urgent</span>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                    <span class="badge badge-info">Manchester</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+
+            <div class="card p-2 mt-3 border-primary">
+                <div class="font-weight-bold"><h5>Need a chat</h5></div>
+                <div>"I'm feeling very lonely during this quarantine because I am  unable to see my grand children, is there someone I can have a friendly chat with?"</div>
+
+                <div>
+                    <span class="badge badge-primary">Remote Assistance</span>
+                    <span class="badge badge-info">Manchester</span>
+                </div>
+
+                <button class="btn btn-outline-primary mt-3">View More</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delivery Required</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Transcript of call:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">My name is Karl Saggan.", "I would like to have a parcel delivered to 69 Block D Alto.", "Contact me on 0161 694 689.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <div>Tags:</div>
+                    <div>
+                        <span class="badge badge-warning">Semi - Urgent</span>
+                        <span class="badge badge-primary">Physical Assistance</span>
+                        <span class="badge badge-info">Manchester</span>
+                        <span class="badge badge-info">0161 694 689</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Additional Notes:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6">- Contacted Mr Saggan: Address of where to collect the parcel from has been acquired: 143 Salford Rd, Manchester MN1 1SD.
+- We have a courier currently out to deliver Mr Saggan's parcel.
+- Parcel has been picked up and courier is on route to Mr Saggan's address.</textarea>
+                </div>
+                
+                <hr />
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Assigned to:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1">Sean McAfzal Adams</textarea>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
